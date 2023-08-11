@@ -7,7 +7,7 @@ const connectionParams = {
   useUnifiedTopology: true,
 };
 
-const uri = process.env.DB_URI;
+const uri =`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster1.ehwknzz.mongodb.net/pizza-box?retryWrites=true&w=majority`;
 
 const databaseConnection = mongoose
   .connect(uri, connectionParams)
