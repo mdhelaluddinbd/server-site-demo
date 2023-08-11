@@ -20,3 +20,7 @@ app.listen(port, () => {
 app.get("/", (req, res) => {
   res.send("Welcome to MongoDb Server");
 });
+
+app.get('/test',(req,res)=>{
+  res.send("This is test")
+})
